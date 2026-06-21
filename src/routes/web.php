@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Amreljako\CyberCart\Facades\Cart;
 use Amreljako\CyberCart\Facades\Checkout;
+use Amreljako\CyberCart\Models\Product;
 use Amreljako\CyberCart\Models\ProductVariant;
 
 Route::group(['prefix' => 'cybercart', 'middleware' => ['web']], function () {
