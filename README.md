@@ -1,4 +1,8 @@
 # CyberCart
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/amreljako/cybercart.svg?style=flat-square)](https://packagist.org/packages/amreljako/cybercart)
+[![GitHub Stars](https://img.shields.io/github/stars/amreljako/cybercart.svg?style=flat-square)](https://github.com/amreljako/cybercart/stargazers)
+[![Total Downloads](https://img.shields.io/packagist/dt/amreljako/cybercart.svg?style=flat-square)](https://packagist.org/packages/amreljako/cybercart)
+[![License](https://img.shields.io/packagist/l/amreljako/cybercart.svg?style=flat-square)](https://packagist.org/packages/amreljako/cybercart/license)
 
 A secure, headless, high-performance embedded e-commerce core engine for Laravel. CyberCart is designed to be dynamically plugged into any existing Laravel application codebase seamlessly, without breaking your current database architecture. It features regional Arab and Gulf payment providers, atomic-locked inventory protection, and complete headless flexibility.
 
