@@ -77,7 +77,7 @@ class CheckoutService
                     'order_id' => $order->id,
                     'product_variant_id' => $variant->id,
                     'product_title' => $item['title'],
-                    'variant_sku' => $item['sku'],
+                    'variant_sku' => $variant->sku,
                     'quantity' => $item['quantity'],
                     'unit_price' => $item['price'],
                     'total_price' => $item['total'],
