@@ -23,6 +23,9 @@ class PaymobDriver implements PaymentServiceInterface
 
     public function initiatePayment(Order $order): array
     {
+        if (empty($this->apiKey)) {
+            throw new \Exception("Paymob API Key is missing. Please configure it in your .env file.");
+        }
         // Step 1: Authentication Request
         $authResponse = Http::post('https://accept.paymob.com/api/auth/tokens', [
             'api_key' => $this->apiKey

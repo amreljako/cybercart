@@ -23,6 +23,12 @@ class TamaraDriver implements PaymentServiceInterface
 
     public function initiatePayment(Order $order): array
     {
+        if (empty($this->apiKey)) {
+            throw new \Exception("Paymob API Key is missing. Please configure it in your .env file.");
+        }
+        if (empty($this->token)) {
+            throw new \Exception("Paymob token is missing. Please configure it in your .env file.");
+        }
         // Tamara requires complex structural payload detailing all individual bought line items
         $items = [];
         foreach ($order->items as $item) {
